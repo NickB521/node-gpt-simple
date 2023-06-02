@@ -1,7 +1,7 @@
 const { Configuration, OpenAIApi } = require("openai")
 
 const configuration = new Configuration({
-  apiKey: "your-openai-key-goes-here"
+  apiKey: process.env.OPENAI_API_KEY
 })
 const openai = new OpenAIApi(configuration)
 
